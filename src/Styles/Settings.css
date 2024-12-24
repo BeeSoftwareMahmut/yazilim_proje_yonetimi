@@ -35,6 +35,7 @@
 .LanguageLabel {
   font-size: 1rem;
   margin-bottom: 5px;
+  color: cadetblue;
 }
 
 .LanguageSelect {

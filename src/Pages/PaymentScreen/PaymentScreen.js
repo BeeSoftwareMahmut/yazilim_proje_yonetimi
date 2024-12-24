@@ -6,22 +6,36 @@ import { CartProvider } from "../../Context/cartContext";
 import { Alert } from "@mui/material";
 import MyContext from "../../Context/Context";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 const PaymentScreen = () => {
 
-  const {showEmailAlert}=useContext(MyContext);
+  const {showEmailAlert,Path}=useContext(MyContext);
    const {t}=useTranslation();
+   const navigate=useNavigate();
+
+
+   
+  const handleGoBack = () => {
+    if (Path) {
+      navigate(Path);
+    } else {
+      navigate("/sales")
+    }
+  }
+
    
   
   return (
     <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <button onClick={handleGoBack} className="navigate-button">{t("Back")}</button>
       <CartProvider>
        
 
- 
+      
        
       <div style={{ flex: 1,margin:"12px" }}>
       {

@@ -44,7 +44,7 @@ const LoginPage = () => {
                     {version && `${t("version")}: ${version}`}
                 </div>
         <div className="logo" id='logo' ref={logoRef}>
-            <img src="Images/logo.png"  alt="Logo" />
+            <img src="Images/logo.jpeg"  alt="Logo" />
         </div>
         <div className='info-text'>
             <h3>{t('welcome')}!</h3>

@@ -8,7 +8,7 @@ const MyContext = React.createContext();
 export const MyProvider = (props) => {
 
     const currentHour = new Date().getHours();
-    const isStoreOnline = currentHour >= 11 && currentHour < 24;
+    const isStoreOnline = currentHour >2  && currentHour < 24;
     const [theme, setTheme] = useState('light');
     const [Path, setPath] = useState(null);
     

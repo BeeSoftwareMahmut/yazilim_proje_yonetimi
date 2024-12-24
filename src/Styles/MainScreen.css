@@ -60,6 +60,18 @@
 .status.offline {
   color: red;
 }
+.navigate-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  margin-bottom: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /* Laptop görünümü için (1024px ve üstü) */
 @media (min-width: 1024px) {

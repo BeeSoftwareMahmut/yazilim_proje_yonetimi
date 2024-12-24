@@ -1,13 +1,18 @@
 import React, { useContext, useState } from 'react';
 import '../../Styles/ShowPricePage.css'; 
 import ProductsContext from '../../Context/ProuductsContext';
+import { useNavigate } from 'react-router-dom';
+import MyContext from '../../Context/Context';
+import { useTranslation } from 'react-i18next';
 
 const ShowPricePage=()=>{
 
     const {products}=useContext(ProductsContext);
-
+    const { Path } = useContext(MyContext);
     const [searchTerm, setSearchTerm] = useState('');
   const [filteredProducts, setFilteredProducts] = useState(products);
+  const { t } = useTranslation();
+  const navigate=useNavigate();
 
   const handleSearch = (e) => {
     const term = e.target.value;
@@ -18,9 +23,20 @@ const ShowPricePage=()=>{
     );
     setFilteredProducts(filtered);
   };
+
+  
+  const handleGoBack = () => {
+    if (Path) {
+      navigate(Path);
+    } else {
+      navigate("/main")
+    }
+  }
+
   
       return (
         <div className="product-list-container">
+           <button onClick={handleGoBack} className="navigate-button">{t("Back")}</button>
           <input
             type="text"
             value={searchTerm}

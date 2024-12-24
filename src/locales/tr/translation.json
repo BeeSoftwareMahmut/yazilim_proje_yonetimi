@@ -23,7 +23,7 @@
   "store_number": "Mağaza No:",
   "register_number": "Kasa No:",
   "ip_address": "IP Adresi:",
-  "version": "Sürüm:",
+  "version": "Sürüm",
   "online": "Çevrimiçi",
   "offline": "Çevrimdışı",
   "store_online": "Mağaza Çevrimiçi",
@@ -74,9 +74,9 @@
 
   "return_order_page_title": "Sipariş İade Sayfası",
   "scan_barcode_instruction": "Lütfen ürünün barkodunu okutunuz!",
-  "product_name": "Ürün Adı:",
-  "category": "Kategori:",
-  "barcode": "Barkod:",
+  "product_name": "Ürün Adı",
+  "category": "Kategori",
+  "barcode": "Barkod",
   "return_button_text": "İade Et",
 
 
@@ -92,7 +92,7 @@
   "pieces":"Adet",
   "new_sales":"Yeni Satış",
   "print_button": "Fişi Yazdır",
-  "returned_amount": "İade tutarı:",
+  "returned_amount": "İade tutarı",
 
 
   
